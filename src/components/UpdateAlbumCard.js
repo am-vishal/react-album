@@ -1,24 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
-import {
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  Grid,
-  TextField,
-  Tooltip,
-  Typography,
-} from "@mui/material";
+import { Button, Card, CardActions, CardContent, Grid, TextField, Tooltip, Typography } from "@mui/material";
 
 const UpdateAlbumCard = (props) => {
-  const [title, setTitle] = useState(
-    props.album.title
-  ); /* Initialize state for the title with the title value passed in as a prop */
-  const [userId, setUserId] = useState(
-    props.album.userId
-  ); /* Initialize state for the userId with the userId value passed in as a prop */
+  const [title, setTitle] = useState(props.album.title); /* Initialize state for the title with the title value passed in as a prop */
+  const [userId, setUserId] = useState(props.album.userId); /* Initialize state for the userId with the userId value passed in as a prop */
 
   const getUpdateData = (e, name) => {
     const id = props.album.id; /* Get the id of the album from props */
@@ -26,9 +13,7 @@ const UpdateAlbumCard = (props) => {
       setTitle(e.target.value); /* Update the title state with the new value */
     }
     if (name === "id") {
-      setUserId(
-        e.target.value
-      ); /* Update the userId state with the new value */
+      setUserId(e.target.value); /* Update the userId state with the new value */
     }
     if (!name) {
       props.updateAlbumInList(
@@ -65,13 +50,7 @@ const UpdateAlbumCard = (props) => {
             Update Album Details
           </Typography>
           <CardContent>
-            <Grid
-              container
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              spacing={4}
-            >
+            <Grid container direction="row" justifyContent="center" alignItems="center" spacing={4}>
               <Grid item xs={11}>
                 <TextField
                   id="updateTitle"
@@ -106,9 +85,7 @@ const UpdateAlbumCard = (props) => {
             <Tooltip
               title={
                 /* if data is not present then add tooltip message */
-                title.length <= 0 || userId.length <= 0
-                  ? "Adding data to the field will enable button"
-                  : ""
+                title.length <= 0 || userId.length <= 0 ? "Adding data to the field will enable button" : ""
               }
               arrow
             >
@@ -118,9 +95,7 @@ const UpdateAlbumCard = (props) => {
                   to="/"
                   size="small"
                   variant="contained"
-                  disabled={
-                    title.length <= 0 || userId.length <= 0
-                  } /* if data is not present then disable this button */
+                  disabled={title.length <= 0 || userId.length <= 0} /* if data is not present then disable this button */
                   onClick={getUpdateData}
                 >
                   Update

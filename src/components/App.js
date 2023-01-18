@@ -48,20 +48,17 @@ const App = () => {
     let updatedAlbum = [];
     if (id < 100) {
       // make a PUT request to the API to update the album
-      updatedAlbum = await fetch(
-        `https://jsonplaceholder.typicode.com/albums/${id}`,
-        {
-          method: "PUT",
-          body: JSON.stringify({
-            userId: updateUserid,
-            id: id,
-            title: updateTitle,
-          }),
-          headers: {
-            "Content-type": "application/json; charset=UTF-8",
-          },
-        }
-      )
+      updatedAlbum = await fetch(`https://jsonplaceholder.typicode.com/albums/${id}`, {
+        method: "PUT",
+        body: JSON.stringify({
+          userId: updateUserid,
+          id: id,
+          title: updateTitle,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
         .then((response) => response.json())
         .then((json) => json);
     } else {
@@ -117,32 +114,11 @@ const App = () => {
       <ToastContainer />
       <Routes>
         {/* Render the Cards component on the root path, passing in the albums, setUpdateAlbum, and deleteAlbumFromList props */}
-        <Route
-          exact
-          path={process.env.PUBLIC_URL}
-          element={
-            <Cards
-              albums={albums}
-              setUpdateAlbum={setUpdateAlbum}
-              deleteAlbumFromList={deleteAlbumFromList}
-            />
-          }
-        ></Route>
+        <Route exact path={"/"} element={<Cards albums={albums} setUpdateAlbum={setUpdateAlbum} deleteAlbumFromList={deleteAlbumFromList} />}></Route>
         {/* Render the AddAlbumCard component on the path "/add-album", passing in the addAlbumToList prop */}
-        <Route
-          path="/add-album"
-          element={<AddAlbumCard addAlbumToList={addAlbumToList} />}
-        ></Route>
+        <Route path="/add-album" element={<AddAlbumCard addAlbumToList={addAlbumToList} />}></Route>
         {/* Render the UpdateAlbumCard component on the path "/update-album", passing in the album and updateAlbumInList props */}
-        <Route
-          path="/update-album"
-          element={
-            <UpdateAlbumCard
-              album={updateAlbum}
-              updateAlbumInList={updateAlbumInList}
-            />
-          }
-        ></Route>
+        <Route path="/update-album" element={<UpdateAlbumCard album={updateAlbum} updateAlbumInList={updateAlbumInList} />}></Route>
       </Routes>
     </>
   );

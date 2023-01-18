@@ -2,15 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import TextField from "@mui/material/TextField";
 import Navbar from "./Navbar";
-import {
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  Grid,
-  Tooltip,
-  Typography,
-} from "@mui/material";
+import { Button, Card, CardActions, CardContent, Grid, Tooltip, Typography } from "@mui/material";
 
 const AddAlbumCard = (props) => {
   const [userId, setUserId] = useState("");
@@ -60,13 +52,7 @@ const AddAlbumCard = (props) => {
           Enter New Album Details
         </Typography>
         <CardContent>
-          <Grid
-            container
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-            spacing={2}
-          >
+          <Grid container direction="row" justifyContent="center" alignItems="center" spacing={2}>
             <Grid item xs={8}>
               {/* TextField component for user input of userId  */}
               <TextField
@@ -101,9 +87,7 @@ const AddAlbumCard = (props) => {
           <Tooltip
             title={
               /* if data is not present then add tooltip message */
-              title.length <= 0 || userId.length <= 0
-                ? "add data to field to enable"
-                : ""
+              title.length <= 0 || userId.length <= 0 ? "add data to field to enable" : ""
             }
             arrow
           >
@@ -114,9 +98,7 @@ const AddAlbumCard = (props) => {
                 size="small"
                 variant="contained"
                 onClick={setAlbumData}
-                disabled={
-                  title.length <= 0 || userId.length <= 0
-                } /* if data is not present then disable this button */
+                disabled={title.length <= 0 || userId.length <= 0} /* if data is not present then disable this button */
               >
                 Add To List
               </Button>

@@ -11,21 +11,10 @@ const Navbar = (props) => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1 }}
-            onClick={() => props.handleClick(false)}
-          >
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} onClick={() => props.handleClick(false)}>
             ALBUMS LIST
           </Typography>
-          <Button
-            component={Link}
-            to={props.path}
-            variant="contained"
-            color="info"
-            sx={{ background: "#0095ff" }}
-          >
+          <Button component={Link} to={props.path} variant="contained" color="info" sx={{ background: "#0095ff" }}>
             {props.page}
           </Button>
         </Toolbar>

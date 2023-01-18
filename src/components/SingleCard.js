@@ -20,11 +20,7 @@ const SingleCard = (props) => {
           position: "relative",
         }}
       >
-        <CardMedia
-          sx={{ height: "100%", marginBottom: "-1px", opacity: 0.6 }}
-          image={require("../assets/bg.webp")}
-          title="background"
-        />
+        <CardMedia sx={{ height: "100%", marginBottom: "-1px", opacity: 0.6 }} image={require("../assets/bg.webp")} title="background" />
         <CardContent
           sx={{
             /* styling for the CardContent */ height: "100%",
@@ -66,9 +62,7 @@ const SingleCard = (props) => {
             size="small"
             variant="contained"
             endIcon={<EditIcon />}
-            onClick={() =>
-              props.setUpdateAlbum(props.album)
-            } /* call setUpdateAlbum function and pass the props.album as a parameter */
+            onClick={() => props.setUpdateAlbum(props.album)} /* call setUpdateAlbum function and pass the props.album as a parameter */
           >
             Update
           </Button>
@@ -77,9 +71,7 @@ const SingleCard = (props) => {
             variant="outlined"
             color="error"
             startIcon={<DeleteIcon />}
-            onClick={() =>
-              props.deleteAlbumFromList(props.album.id)
-            } /* call deleteAlbumFromList function and pass the props album id as a parameter */
+            onClick={() => props.deleteAlbumFromList(props.album.id)} /* call deleteAlbumFromList function and pass the props album id as a parameter */
           >
             Delete
           </Button>

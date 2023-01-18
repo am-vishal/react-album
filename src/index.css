@@ -1,37 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Cherry+Swash);
 
 * {
-    box-sizing: border-box;
-    /* setting box-sizing to border-box so that padding and border values are included in the total width and height of an element */
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
+  box-sizing: border-box;
+  /* setting box-sizing to border-box so that padding and border values are included in the total width and height of an element */
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
 }
 
 body {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    /* setting minimum height of the body element to 100vh so that it takes the full height of the viewport */
-    min-height: 100vh;
-    background-color: #4a628b;
-    background-color: #0e3b62;
-
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  /* setting minimum height of the body element to 100vh so that it takes the full height of the viewport */
+  min-height: 100vh;
+  background-color: #4a628b;
+  background-color: #0e3b62;
 }
 
 .card {
-    width: 310px;
-    height: 300px;
-    padding: 10px;
+  width: 310px;
+  height: 300px;
+  padding: 10px;
 }
 
 .card-list {
-    width: 75%;
-    margin: auto;
-    /* setting margin to auto so that it is centered */
-    padding-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    /* setting flex-wrap to wrap so that the elements inside it wrap to the next line if they don't fit on the current line */
-    justify-content: space-around;
-    /* setting justify-content to space-around so that the elements inside it are spaced evenly and have equal space around them */
+  width: 75%;
+  margin: auto;
+  /* setting margin to auto so that it is centered */
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  /* setting flex-wrap to wrap so that the elements inside it wrap to the next line if they don't fit on the current line */
+  justify-content: space-around;
+  /* setting justify-content to space-around so that the elements inside it are spaced evenly and have equal space around them */
 }
