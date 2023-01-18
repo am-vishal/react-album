@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-album/static/css/main.5d9919d1.css",
+    "main.js": "/react-album/static/js/main.8164c54e.js",
+    "static/media/bg.webp": "/react-album/static/media/bg.3f27cb8bfdc215c33b25.webp",
+    "index.html": "/react-album/index.html",
+    "main.5d9919d1.css.map": "/react-album/static/css/main.5d9919d1.css.map",
+    "main.8164c54e.js.map": "/react-album/static/js/main.8164c54e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d9919d1.css",
+    "static/js/main.8164c54e.js"
+  ]
+}
