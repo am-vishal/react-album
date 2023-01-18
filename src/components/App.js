@@ -114,6 +114,8 @@ const App = () => {
       <ToastContainer />
       <Routes>
         {/* Render the Cards component on the root path, passing in the albums, setUpdateAlbum, and deleteAlbumFromList props */}
+        <Route path="/react-album" element={<Cards albums={albums} setUpdateAlbum={setUpdateAlbum} deleteAlbumFromList={deleteAlbumFromList} />}></Route>
+        {/* if /react-album fails to loads in production then / will load */}
         <Route path="/" element={<Cards albums={albums} setUpdateAlbum={setUpdateAlbum} deleteAlbumFromList={deleteAlbumFromList} />}></Route>
         {/* Render the AddAlbumCard component on the path "/add-album", passing in the addAlbumToList prop */}
         <Route path="/add-album" element={<AddAlbumCard addAlbumToList={addAlbumToList} />}></Route>
