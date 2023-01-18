@@ -1,6 +1,6 @@
 # React-album
 
-- ###### ⮞ React-album is a simple React application that allows you to view, add, update, and delete albums from a list. The list of albums is fetched from an external API (https://jsonplaceholder.typicode.com/albums) and displayed on the page as cards.
+###### ⮞ React-album is a simple React application that allows you to view, add, update, and delete albums from a list. The list of albums is fetched from an external API (https://jsonplaceholder.typicode.com/albums) and displayed on the page as cards.
 
 #### The application makes use of the following libraries and features:
 
@@ -38,8 +38,8 @@
 
 ### Limitations
 
-- ###### ⮞ The application is a simple demonstration of how to work with an external API and does not provide any error handling or validation. Additionally, the API used in the application is a placeholder and may not always return the expected results.
+###### ⮞ The application is a simple demonstration of how to work with an external API and does not provide any error handling or validation. Additionally, the API used in the application is a placeholder and may not always return the expected results.
 
 ### Conclusion
 
-- ###### ⮞ react-album is a simple application that shows how to use React Hooks, React Router and react-toastify. It is a good starting point for learning how to work with external APIs and use common React libraries.
+###### ⮞ react-album is a simple application that shows how to use React Hooks, React Router and react-toastify. It is a good starting point for learning how to work with external APIs and use common React libraries.
