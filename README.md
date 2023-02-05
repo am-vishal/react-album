@@ -17,7 +17,7 @@
 - Run npm start to start the application
 - Open _http://localhost:3000_ in your browser to view the application
 
-#### Components
+### Components
 
 ##### The application is made up of several components:
 
@@ -26,7 +26,7 @@
 - **AddAlbumCard**: A component that allows you to add a new album to the list
 - **UpdateAlbumCard**: A component that allows you to update an existing album in the list
 
-#### Functionality
+### Functionality
 
 ##### The application allows you to perform the following actions:
 
